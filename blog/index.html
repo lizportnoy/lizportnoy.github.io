@@ -1,12 +1,11 @@
 ---
 layout: default
-title: Liz Portnoy's Blog
+title: About Me
 ---
-	<h1>{{ page.title }}</h1>
-	<ul class="posts">
+		<div class="container">
+    		<div class="blurb">
+        		<h1>Welcome, friends!</h1>
+				<p>Welcome to my blog. I'm new to programming, but not to writing blogs so I hope to use this blog to work and reflect on my new life as a programmer. More to come!</p>
+    		</div><!-- /.blurb -->
+		</div><!-- /.container -->
 
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
-	
